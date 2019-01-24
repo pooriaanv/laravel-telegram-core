@@ -1,0 +1,43 @@
+{
+    "name": "pooriaanv/laravel-telegram-core",
+    "description": "Laravel Telegram Bot Core.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pooria Anvari",
+            "email": "masonalex540@gmail.com",
+            "homepage": "http://pooriaanv.ir"
+        }
+    ],
+    "homepage": "https://github.com/pooriaanv/laravel-telegram-core",
+    "keywords": ["Laravel", "LaravelTelegramCore", "TelegramCore", "TelegramAPI"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TelegramCore\\LaravelTelegramCore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TelegramCore\\LaravelTelegramCore\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TelegramCore\\LaravelTelegramCore\\LaravelTelegramCoreServiceProvider"
+            ],
+            "aliases": {
+                "LaravelTelegramCore": "TelegramCore\\LaravelTelegramCore\\Facades\\LaravelTelegramCore"
+            }
+        }
+    }
+}
